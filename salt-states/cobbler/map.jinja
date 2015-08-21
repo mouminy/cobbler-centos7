@@ -1,0 +1,11 @@
+{%
+  set cobbler_default = {
+    "cobbler_pkg_dep" : ['cobbler',
+                         'cobbler-web',
+                         'dnsmasq',
+                         'syslinux',
+                         'pykickstart'],
+    } 
+%}
+
+{% set cobbler = salt["pillar.get"]("cobbler", default=cobbler_default, merge=True) %}
