@@ -1,6 +1,6 @@
 cobbler:
-  next_server: 192.168.1.84
-  server: 192.168.1.84
+  next_server: 10.0.0.1
+  server: 10.0.0.1
   manage_dhcp: 1
   manage_dns: 1
   manage_tftpd: 1
