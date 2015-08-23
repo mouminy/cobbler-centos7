@@ -1,6 +1,6 @@
 cobbler:
-  next_server: 10.0.0.1
-  server: 10.0.0.1
+  next_server: "{{ grains['ipv4'][1] }}"
+  server: "{{ grains['ipv4'][1] }}"
   manage_dhcp: 1
   manage_dns: 1
   manage_tftpd: 1
